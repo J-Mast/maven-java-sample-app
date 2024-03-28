@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-            steps {
-                // Get some code from a GitHub repository
-                git credentialsId: '5a639772-bc15-4141-a135-545eb9b8ceca', url: 'git@github.com:J-Mast/maven-java-sample-app.git'
-            }
-        }
         stage('Build') {
             steps {
                 // Run Maven on a Unix agent.
